@@ -8,7 +8,7 @@
 
   /** reutilizando codigo para etiquetas a, button **/
   
-  a, button{
+  .enlaces a {
     text-decoration: none;
     color: black;
     font-size: 0.9em;
@@ -20,13 +20,15 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%;
+    padding: 10px 10%;
     background: #7a7a79;;
 }
 
 /* tamaño al logo del nav */
 nav img{
-    width: 50px;
+    position: relative;
+    padding: 0 0 0 40px;
+    width: 100px;
 }
 
 nav .enlaces a{
@@ -70,3 +72,5 @@ nav button{
 nav button:hover{
     background: #c98520;
 }
+
+/* Carrousel */
