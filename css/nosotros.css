@@ -1,0 +1,15 @@
+.mision, .vision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.valores{
+    display: block;
+    text-align: center;
+     
+}
+
+
+
+
