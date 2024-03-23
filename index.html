@@ -1,110 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ColibriV2.0</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>ColibriV2.0</title>
+     <link rel="stylesheet" href="css/estilos.css">
+     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
+
 <body>
-<header>
-    <nav class="navbar">
-     <!-- Contenedor imagen -->
-        <div class="img-logo">
-             <img src="img/logo.png" alt="">
-        </div>  
-        <!-- contenedor enlaces -->
-        <div class="enlaces">
-             <a href="index.html">Inicio</a>
-             <a href="nosotros.html">Nosotros</a>
-             <a href="cursosVacacionales.html">Cursos</a>
-             <a href="contacto.html">Contacto</a>
-        </div>
-        
-        <!-- Contenedor boton -->
-        <div class="btn">
-             <button>Login</button>
-        </div>
-   </nav>
-   </header>
+     <header>
+          <nav class="navbar">
+               <!-- Contenedor imagen -->
+               <div class="img-logo">
+                    <img src="img/logo.png" alt="">
+               </div>
+               <!-- contenedor enlaces -->
+               <div class="enlaces">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="cursosVacacionales.html">Cursos</a>
+                    <a href="contacto.html">Contacto</a>
+                    <!-- Contenedor boton -->
+                    <div class="btn">
+                         <button>Login</button>
+                    </div>
+               </div>
 
-   <!-- Carrousel con Bootstrap -->
-   <section>
-   <div id="carouselExample" class="carousel slide">
-     <div class="carousel-inner">
-       <div class="carousel-item active">
-         <img src="/img/banner.jpg" class="d-block w-100" alt="...">
-       </div>
-       <div class="carousel-item">
-         <img src="/img/banner.jpg" class="d-block w-100" alt="...">
-       </div>
-       <div class="carousel-item">
-         <img src="/img/banner.jpg" class="d-block w-100" alt="...">
-       </div>
-     </div>
-     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-       <span class="visually-hidden">Previous</span>
-     </button>
-     <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-       <span class="visually-hidden">Next</span>
-     </button>
-   </div>
-   </section>
-   
-   <div class="container">
-     <div class="card">
-          <div class="img">
-              <img src="/img/primaria.jpg" alt="rostro">
+               <!-- Contenedor Carrito -->
+               <div class="submenu">
+                    <img src="img/cart.png" id="img-carrito">
+                    <div id="carrito">
+                         <table id="lista-carrito" class="u-full-width">
+                              <thead>
+                                   <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                   </tr>
+                              </thead>
+                              <tbody></tbody>
+                         </table>
+                         <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                    </div>
+
+               </div>
+
+          </nav>
+     </header>
+
+     <!-- Carrousel con Bootstrap -->
+     <section>
+          <div id="carouselExample" class="carousel slide">
+               <div class="carousel-inner">
+                    <div class="carousel-item active">
+                         <img src="/img/banner.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                         <img src="/img/banner.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                         <img src="/img/banner.jpg" class="d-block w-100" alt="...">
+                    </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+               </button>
           </div>
-          <h2>Primaria
-              <br><span>Jardin a Quinto</span>
-          </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum excepturi fugiat facere asperiores, aut a libero quis, eligendi quae repellat autem eos doloremque voluptate neque, vero sapiente dolorem quas!</p>
-     </div>
+     </section>
 
-     <div class="card">
-          <div class="img">
-              <img src="/img/secundaria.jpg" alt="rostro">
+     <div class="container">
+          <div class="card">
+               <div class="img">
+                    <img src="/img/primaria.jpg" alt="rostro">
+               </div>
+               <h2>Primaria
+                    <br><span>Jardin a Quinto</span>
+               </h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum excepturi fugiat facere
+                    asperiores, aut a libero quis, eligendi quae repellat autem eos doloremque voluptate neque, vero
+                    sapiente dolorem quas!</p>
           </div>
-          <h2>Secundaria
-              <br><span>Sexto a Once</span>
-          </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum excepturi fugiat facere asperiores, aut a libero quis, eligendi quae repellat autem eos doloremque voluptate neque, vero sapiente dolorem quas!</p>
-     </div>
 
-     <div class="card">
-          <div class="img">
-              <img src="/img/secundaria.jpg" alt="rostro">
+          <div class="card">
+               <div class="img">
+                    <img src="/img/secundaria.jpg" alt="rostro">
+               </div>
+               <h2>Secundaria
+                    <br><span>Sexto a Once</span>
+               </h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum excepturi fugiat facere
+                    asperiores, aut a libero quis, eligendi quae repellat autem eos doloremque voluptate neque, vero
+                    sapiente dolorem quas!</p>
           </div>
-          <h2>Cursos
-              <br><span>Especialidades</span>
-          </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum excepturi fugiat facere asperiores, aut a libero quis, eligendi quae repellat autem eos doloremque voluptate neque, vero sapiente dolorem quas!</p>
-     </div>
- </div>
 
- <footer>
-     <div>
-          <a href="#"><span class="fab fa-facebook-f"></span></a>
+          <div class="card">
+               <div class="img">
+                    <img src="/img/secundaria.jpg" alt="rostro">
+               </div>
+               <h2>Cursos
+                    <br><span>Especialidades</span>
+               </h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum excepturi fugiat facere
+                    asperiores, aut a libero quis, eligendi quae repellat autem eos doloremque voluptate neque, vero
+                    sapiente dolorem quas!</p>
+          </div>
      </div>
-     <div>
-          <a href="#"><span class="fab fa-twitter"></span></a>
+
+     <footer>
+          <div>
+               <a href="#"><span class="fab fa-facebook-f"></span></a>
+          </div>
+          <div>
+               <a href="#"><span class="fab fa-twitter"></span></a>
+          </div>
+          <div>
+               <a href="#"><span class="fab fa-instagram"></span></a>
+          </div>
+          <div>
+               <a href="#"><span class="fab fa-youtube"></span></a>
+          </div>
+     </footer>
+     <div class="copy">
+          <p>© 2024. All Rights Reserved</p>
      </div>
-     <div>
-          <a href="#"><span class="fab fa-instagram"></span></a>
-     </div>
-     <div>
-          <a href="#"><span class="fab fa-youtube"></span></a>
-     </div>
-   </footer>
-   <div class="copy">
-     <p>© 2024. All Rights Reserved</p>
- </div>
-   
-   <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
-   <script src="https://kit.fontawesome.com/e425e7a0eb.js" crossorigin="anonymous"></script>
+
+     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+     <script src="https://kit.fontawesome.com/e425e7a0eb.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
