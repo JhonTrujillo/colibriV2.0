@@ -1,11 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ColibriV2.0</title>
+    <!-- <link rel="stylesheet" href="css/estilos.css"> -->
+    <link rel="stylesheet" href="css/cursos.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
+
 <body>
-    <h1>Hola Mundo</h1>
+    <header>
+        <nav class="navbar">
+            <!-- Contenedor imagen -->
+            <div class="img-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <!-- contenedor enlaces -->
+            <div class="enlaces">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="cursosVacacionales.html">Cursos</a>
+                <a href="contacto.html">Contacto</a>
+                <!-- Contenedor boton -->
+                <div class="btn">
+                    <button>Login</button>
+                </div>
+            </div>
+
+            <!-- Contenedor Carrito -->
+            
+                <ul class="container-carrito">
+                    <li class="submenu">
+                        <img src="img/cart.png" id="img-carrito">
+                        <div id="carrito" class="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            
+           </nav>
+    </header>
+
+    <div id="lista-cursos" class="container">
+        <div class="card">
+            <img src="img/secundaria.jpg">
+            <div class="info-card">
+                <h4>Musica</h4>
+                <p>Expresion Artistica</p>
+                <img src="img/estrellas.png">
+                <p class="precio"><span>$15</span></p>
+                <a href="#" class="input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/secundaria.jpg">
+            <div class="info-card">
+                <h4>Hapkido</h4>
+                <p>Arte marcial Koreana</p>
+                <img src="img/estrellas.png">
+                <p class="precio"><span>$15</span></p>
+                <a href="#" class="input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/secundaria.jpg">
+            <div class="info-card">
+                <h4>Tecnologia</h4>
+                <p>Conocimientos y habilidades</p>
+                <img src="img/estrellas.png">
+                <p class="precio"><span>$15</span></p>
+                <a href="#" class="input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <a href="#"><span class="fab fa-facebook-f"></span></a>
+        </div>
+        <div>
+            <a href="#"><span class="fab fa-twitter"></span></a>
+        </div>
+        <div>
+            <a href="#"><span class="fab fa-instagram"></span></a>
+        </div>
+        <div>
+            <a href="#"><span class="fab fa-youtube"></span></a>
+        </div>
+    </footer>
+    <div class="copy">
+        <p>© 2024. All Rights Reserved</p>
+    </div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/e425e7a0eb.js" crossorigin="anonymous"></script>
+    <script src="/js/carrito.js"></script>
 </body>
+
 </html>

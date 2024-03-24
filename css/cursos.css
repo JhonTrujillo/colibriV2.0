@@ -229,6 +229,12 @@ footer div a{
     min-height: 400px;
     min-width: 300px;
 }
+/* Container carrito */
+.submenu:hover #carrito{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+}
 
 
 
