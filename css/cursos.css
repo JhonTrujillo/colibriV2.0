@@ -226,14 +226,44 @@ footer div a{
     z-index: 3;
     background-color: white;
     padding: 20px;
-    min-height: 400px;
+    min-height: 300px;
     min-width: 300px;
 }
 /* Container carrito */
-.submenu:hover #carrito{
-    text-transform: uppercase;
+#lista-carrito th, td {
     text-align: center;
-    margin-top: 10px;
+    padding: 5px 5px;
+}
+
+/* Estilo boton eliminar */
+#lista-carrito td a{
+    background-color: crimson;
+    color: #CCC;
+}
+
+/* EStilo boton vaciar carrito */
+.carrito a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px 25px;
+    text-decoration: none;
+    background: #faaf38;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.carrito a:hover{
+    background: #c98520;
+}
+
+/* Estilo con contenedor carrito */
+.carrito{
+    border-radius: 50px;
+    border: 1px solid #7a7a79;
 }
 
 
