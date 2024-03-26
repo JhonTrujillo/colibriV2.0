@@ -15,12 +15,20 @@ function cargarEventListeners() {
       // Cuando se elimina un curso del carrito
       carrito.addEventListener('click', eliminarCurso);
 
+      // NUEVO: Contenido cargado
+     document.addEventListener('DOMContentLoaded', () => {
+        articulosCarrito = JSON.parse( localStorage.getItem('carrito') ) || []  ;
+        // console.log(articulosCarrito);
+        carritoHTML();
+   });
+
     // Al Vaciar el carrito
       vaciarCarritoBtn.addEventListener('click', () => {
         articulosCarrito =[];
         vaciarCarrito();
       });
 
+       
 }
 
 // Funciones
@@ -97,8 +105,14 @@ function carritoHTML() {
         contenedorCarrito.appendChild(row);
     });
 
+ // NUEVO: agregra arreglo al storage
+     sincronizarStorage();
 }
 
+// NUEVO: 
+function sincronizarStorage() {
+    localStorage.setItem('carrito', JSON.stringify(articulosCarrito));
+}
 
 // Elimina los cursos del carrito en el DOM
 function vaciarCarrito() {
@@ -108,7 +122,7 @@ function vaciarCarrito() {
     // forma rapida (recomendada)
     while (contenedorCarrito.firstChild) {
         contenedorCarrito.removeChild(contenedorCarrito.firstChild);
-        
+        sincronizarStorage();
     }
     
 }
